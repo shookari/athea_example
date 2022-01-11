@@ -2,10 +2,10 @@ from sqlalchemy.engine import *
 import pandas as pd
 import ddl_dml
 
-AWS_ACCESS_KEY = "AKIAXKASUCZNAZ27PIP2"
-AWS_SECRET_KEY = "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"
+AWS_ACCESS_KEY = "{key}"
+AWS_SECRET_KEY = "{secret_key}"
 SCHEMA_NAME = "default"
-S3_STAGING_DIR = "s3://athena-test-buck-rome"
+S3_STAGING_DIR = "s3://bucket_address"
 AWS_REGION = "ap-northeast-2"
 
 conn_str = (f'awsathena+rest://{AWS_ACCESS_KEY}:{AWS_SECRET_KEY}'
